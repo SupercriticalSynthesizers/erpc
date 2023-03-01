@@ -86,6 +86,7 @@ sources = [
     'src/SymbolScanner.cpp',
     'src/Token.cpp',
     'src/UniqueIdChecker.cpp',
+    'src/Utils.cpp',
     lexer_target,
     parser_target,
     template_targets,
