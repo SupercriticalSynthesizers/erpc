@@ -95,6 +95,7 @@ deps = [
     dependency('boost',
         modules: ['filesystem', 'system'],
         static: true,
+        native: true,
     ),
 ]
 
