@@ -8,7 +8,10 @@ endif
 
 pymod = import('python')
 
-bison = find_program('bison')
+bison = find_program([
+    '/opt/homebrew/opt/bison/bin/bison',
+    'bison'
+])
 flex = find_program('flex')
 python = pymod.find_installation()
 
