@@ -113,6 +113,10 @@ if host_machine.system() == 'windows'
     common_args += '-DWIN32'
 endif
 
+if host_machine.system() == 'darwin'
+    includes += '/Library/Developer/CommandLineTools/usr/include/'
+endif
+
 erpcgen_exe = executable('erpcgen',
     sources: sources,
     include_directories: includes,
